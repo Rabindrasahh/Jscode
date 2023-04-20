@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // finding the reverse of the array
+      function reverseArray(data, start, end) {
+        if (start <= end) {
+          let temp = data[start];
+          data[start] = data[end];
+          data[end] = temp;
+          reverseArray(data, start + 1, end - 1);
+        }
+      }
+      let data = [1, 2, 3, 4, 5, 6, 7, 8];
+      reverseArray(data, 0, data.length - 1);
+      console.log(data);
+      // finding the reverse of the array
+      //   function reverseArray(data) {
+      //     let data1 = [];
+      //     for (let i = data.length - 1; i >= 0; i--) {
+      //       data1.push(data[i]);
+      //       //   console.log(data[i]);
+      //     }
+      //     console.log(data1);
+      //   }
+      //   let data = [1, 2, 3, 4, 5, 6, 7];
+      //   reverseArray(data);
+
+      // finding the factorial of the number
+
+      //   function factorial(data) {
+      //     if (data == 0) {
+      //       return 1;
+      //     }
+      //     return data * factorial(data - 1);
+      //   }
+      //   let data = 4;
+      //   console.log(factorial(data));
+      // deleting element from the array
+      //   let data = [1, 2, 3, 3, 4, 5, 6, 7];
+      //   let position = 5;
+      //   if (position <= data.length) {
+      //     for (let i = position; i < data.length; i++) {
+      //       data[i] = data[i + 1];
+      //     }
+      //     data.length = data.length - 1;
+      //   }
+      //   console.log(data);
+      //   // Insert element in the array
+      //   let data = [1, 2, 3, 4, 5, 6, 7];
+      //   let position = 4;
+      //   let newEl = 45;
+      //   for (let i = data.length - 1; i >= position; i--) {
+      //     if (i >= position) {
+      //       data[i + 1] = data[i];
+      //       if (i == position) {
+      //         data[i] = newEl;
+      //       }
+      //     }
+      //   }
+      //   console.log(data);
+      //   let data = [1, 2, 3, 4, 5, 6, 7, 8];
+      //   let match = 7;
+      //   index = undefined;
+      //   for (let i = 0; i < data.length; i++) {
+      //     if (data[i] === match) {
+      //       console.log("Your item is present in array");
+      //       index = i + 1;
+      //     }
+      //   }
+      //   console.log(
+      //     `The current position of the present element in array${index}`
+      //   );
+      //   let data1 = [2, 3, 4, 5, 5, 6];
+      //   let data3 = [];
+      //   for (let i = 0; i < data.length; i++) {
+      //     data3[i] = data[i];
+      //   }
+      //   for (let i = 0; i < data1.length; i++) {
+      //     data3[data.length + i] = data1[i];
+      //   }
+      //   console.log(data3);
+    </script>
+  </head>
+  <body></body>
+</html>
